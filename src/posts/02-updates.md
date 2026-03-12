@@ -9,3 +9,5 @@ After a year of stubborn hard work during my free time, Ruddy is finally in the 
 - Native DuckDB Integration: Leveraging DuckDB in the most native way possible to ensure peak performance and data safety.
 - High-Performance UI: Building a user interface that is both lightning-fast and highly functional for data workloads.
 - Dependency Management: Successfully managing and integrating a complex stack of local and cloud dependencies.
+
+Stay tuned; we're just getting our feathers wet.
