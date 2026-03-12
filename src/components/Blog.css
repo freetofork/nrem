@@ -1,0 +1,127 @@
+.blog-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  padding: 80px 20px;
+  box-sizing: border-box;
+  font-family: "Share Tech", sans-serif;
+  color: #fff;
+}
+
+.blog-content {
+  max-width: 800px;
+  width: 100%;
+  background-color: #000;
+  border: 1px solid #5bf581;
+  border-radius: 4px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  box-shadow: 0 0 15px rgba(91, 245, 129, 0.1);
+}
+
+.blog-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 24px;
+}
+
+.blog-header h2 {
+  font-size: 2.5rem;
+  margin: 0;
+  letter-spacing: 0.05em;
+  color: #5bf581;
+}
+
+.blog-subtitle {
+  font-size: 1.25rem;
+  color: #fff;
+  margin: 0;
+  font-weight: 300;
+}
+
+.blog-date {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.blog-body {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #fff;
+}
+
+.blog-body h3 {
+  font-family: "Share Tech", sans-serif;
+  font-size: 1.5rem;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  color: #5bf581;
+}
+
+.blog-body p {
+  margin-bottom: 16px;
+}
+
+.blog-body ul, .blog-body ol {
+  margin-bottom: 16px;
+  padding-left: 24px;
+}
+
+.blog-body li {
+  margin-bottom: 8px;
+}
+
+.blog-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: 1px solid #5bf581;
+  color: #5bf581;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: "Share Tech", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.nav-button:hover:not(.disabled) {
+  background-color: rgba(91, 245, 129, 0.1);
+  box-shadow: 0 0 10px rgba(91, 245, 129, 0.2);
+}
+
+.nav-button.disabled {
+  opacity: 0.3;
+  border-color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .blog-content {
+    padding: 24px;
+  }
+  
+  .blog-header h2 {
+    font-size: 2rem;
+  }
+}
