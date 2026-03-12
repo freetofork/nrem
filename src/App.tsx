@@ -1,21 +1,26 @@
+import { Blog } from './components/Blog'
 import './App.css'
 
 function App() {
   return (
     <div className="app-container">
-      <div className="video-container">
-        <video 
-          src="/nrem_animation.mp4" 
-          autoPlay 
-          loop 
-          muted 
-          playsInline
-          className="fullscreen-video"
-        />
+      <div className="landing-section">
+        <div className="video-container">
+          <video 
+            src="/nrem_animation.mp4" 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            className="fullscreen-video"
+          />
+        </div>
+        <div className="text-container">
+          <h1>NREM</h1>
+        </div>
       </div>
-      <div className="text-container">
-        <h1>NREM</h1>
-      </div>
+      
+      <Blog />
     </div>
   )
 }
